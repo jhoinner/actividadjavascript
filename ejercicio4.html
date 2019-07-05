@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=}, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>punto4</title>
+</head>
+<body>
+    <script>
+        cont1=0;
+        cont2=1;
+      for(var i=1; i<=10; i++){
+        var num  = parseInt(prompt("Digite el numero"));
+        if(num>0){
+         cont1=cont1+num;
+        }
+        if(num<0){
+           cont2=num*cont2;
+        }
+      }
+      document.write("<p> La suma de los positivos son "+cont1+" la multiplicacion de los negativos es "+cont2+" </p>")
+      
+
+    </script>
+</body>
+</html>

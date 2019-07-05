@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>punto6</title>
+</head>
+<body>
+    <script>
+        var exit = true;
+        var contador1 =0;
+        var contador2 =0;
+        var weight;
+
+        num = window.prompt("ingrese cantidad de personas");
+    
+        for(i=1; i<=num; i++) {
+            weight = parseInt(window.prompt("ingrese el peso: "));
+            if(weight>80){
+                contador1++;
+            }else if(weight<80 && weight>0){
+                contador2++;
+            }
+        }
+        document.write("<p>las personas con  pesos mayores a 80Kg son: "+contador1);
+        document.write("<p>las personas con  pesos menores a 80Kg son: "+contador2);
+    </script>
+</body>
+</html>
